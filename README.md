@@ -46,3 +46,12 @@ As interfaces dos serviços podem mudar; siga as opções equivalentes de public
 - [ ] Testei uma senha errada e a senha correta.
 - [ ] Testei a navegação em uma tela estreita.
 - [ ] Abri o link publicado em outro navegador/dispositivo.
+
+
+## Fragmentos e ambientação
+
+- Personalize o nome no início de `script.js`, na constante `friendName`.
+- Os botões “Examinar fragmento” estão dentro dos textos dos três documentos, no objeto `documents` do `script.js`.
+- O progresso de fragmentos é temporário: reiniciar a investigação limpa os fragmentos encontrados.
+- O painel Ambientação está preparado para dois arquivos de áudio opcionais: `sounds/fire.mp3` e `sounds/rain.mp3`. Crie uma pasta `sounds` no repositório e envie seus próprios arquivos de áudio com esses nomes. Os dois volumes podem ser ajustados separadamente.
+- Cada fragmento tem um espaço reservado para uma imagem. Quando escolher as imagens, você pode substituir o espaço reservado por uma tag `<img>` e usar um caminho como `images/fragmento-vx01.jpg`.

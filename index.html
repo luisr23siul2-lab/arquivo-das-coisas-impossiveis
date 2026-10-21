@@ -19,8 +19,32 @@
       <p class="eyebrow">Instituto de Estudos Arcanos</p>
       <p class="topbar-title">Arquivo de Vespera <span>·</span> Setor IV</p>
     </div>
-    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false" title="Ativar som ambiente (opcional)">♫ <span>Som</span></button>
+    <button class="sound-toggle" id="soundToggle" type="button" aria-expanded="false" aria-controls="ambiencePanel" title="Abrir ambientação">♫ <span>Ambientação</span></button>
   </header>
+
+  <div class="ambience-backdrop" id="ambienceBackdrop" hidden></div>
+  <aside class="ambience-panel" id="ambiencePanel" aria-labelledby="ambienceTitle" hidden>
+    <div class="ambience-heading">
+      <div><p class="eyebrow">INSTITUTO DE VESPERA</p><h2 id="ambienceTitle">Ambientação</h2></div>
+      <button class="modal-close" id="ambienceClose" type="button" aria-label="Fechar ambientação">×</button>
+    </div>
+    <p class="ambience-intro">Ajuste os sons do arquivo ao seu gosto. Os controles ficam prontos; para ouvir, adicione seus próprios arquivos de áudio à pasta <code>sounds</code>.</p>
+    <div class="sound-channel" data-sound-channel="fire">
+      <div class="sound-channel-top"><span class="sound-glyph" aria-hidden="true">♨</span><div><strong>Lareira</strong><small id="fireStatus">Arquivo esperado: sounds/fire.mp3</small></div></div>
+      <label for="fireVolume">Volume da lareira <output id="fireVolumeValue">35%</output></label>
+      <input id="fireVolume" type="range" min="0" max="100" value="35">
+      <button class="sound-play" id="firePlay" type="button">▶ Reproduzir lareira</button>
+      <audio id="fireAudio" loop preload="none" src="sounds/fire.mp3"></audio>
+    </div>
+    <div class="sound-channel" data-sound-channel="rain">
+      <div class="sound-channel-top"><span class="sound-glyph" aria-hidden="true">☂</span><div><strong>Chuva</strong><small id="rainStatus">Arquivo esperado: sounds/rain.mp3</small></div></div>
+      <label for="rainVolume">Volume da chuva <output id="rainVolumeValue">25%</output></label>
+      <input id="rainVolume" type="range" min="0" max="100" value="25">
+      <button class="sound-play" id="rainPlay" type="button">▶ Reproduzir chuva</button>
+      <audio id="rainAudio" loop preload="none" src="sounds/rain.mp3"></audio>
+    </div>
+    <p class="ambience-note">Dica: os dois sons podem tocar juntos. O volume de cada um é independente.</p>
+  </aside>
 
   <main id="app">
     <section class="screen active" id="screen-intro" aria-labelledby="intro-title">
@@ -47,6 +71,9 @@
       </div>
       <div class="progress-row"><span>REGISTROS EXAMINADOS</span><span id="progressText">0 / 3</span></div>
       <div class="progress-track"><div id="progressFill"></div></div>
+      <div class="fragment-progress-row"><span>FRAGMENTOS RECUPERADOS</span><span id="fragmentProgressText">0 / 3</span></div>
+      <div class="fragment-progress-track"><div id="fragmentProgressFill"></div></div>
+      <div class="fragment-note" id="fragmentNote">Três documentos guardam pequenos fragmentos. Examine-os para reconstruir o registro.</div>
       <div class="document-grid">
         <button class="document-card" type="button" data-doc="individual">
           <span class="doc-number">REGISTRO A-01</span><span class="doc-icon">♙</span>
