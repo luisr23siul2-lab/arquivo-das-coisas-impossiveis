@@ -13,7 +13,7 @@ const fragmentProgressFill = document.getElementById("fragmentProgressFill");
 const fragmentNote = document.getElementById("fragmentNote");
 
 // Personalize o nome aqui. Você não precisa alterar a lógica do site.
-const friendName = "NOME DO SEU AMIGO";
+const friendName = "ElzZzMa";
 const fragments = {
   individual: { title: "Fragmento VX-01 · Presença", text: "Algumas pessoas deixam marcas no arquivo mesmo quando não estão na mesma sala.", symbol: "⌁" },
   letter: { title: "Fragmento VX-02 · Memória", text: "Uma lembrança compartilhada continua existindo mesmo depois que a conversa termina.", symbol: "✉" },
