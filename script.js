@@ -15,7 +15,7 @@ const documents = {
     symbol: "♙",
     title: "Indivíduo extraordinário",
     body: `
-      <p><strong>Nome:</strong> [NOME DO SEU AMIGO]</p>
+      <p><strong>Nome:</strong> ElzZzma </p>
       <p><strong>Classificação:</strong> presença rara, comportamento imprevisível e tendência preocupante a participar de acontecimentos que depois precisam ser explicados.</p>
       <p><strong>Observação do arquivista:</strong> há indícios de que o indivíduo consegue transformar uma conversa simples em uma história que não deveria ser repetida fora de contexto.</p>
       <p>Apesar das anomalias, sua presença é considerada uma ocorrência positiva para os que o conhecem.</p>
